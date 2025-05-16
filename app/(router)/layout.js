@@ -6,7 +6,7 @@ import Header from './_components/header'
 function layout({children}) {
   return (
     <div className='flex'>
-        <div className='sm:w-64 hidden sm:block block fixed'>
+        <div className='sm:w-64 hidden sm:block fixed'>
             <Sidenav />
         </div>
         <div className=' sm:ml-64'>
