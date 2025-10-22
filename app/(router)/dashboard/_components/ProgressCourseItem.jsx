@@ -25,7 +25,7 @@ export default function ProgressCourseItem({course}) {
         <h2 className='font-medium'>{course.courseList.name}</h2>
         <h2 className='text-[12px] text-gray-400'>{course.courseList.author}</h2>
         <h2 className='text-[12px] text-gray-400 mt-3'>{getTotalCompletedChapterPerc(course)}%
-          <span className='float-right'>{course.completedChapter?.length > course.courseList?.chapter?.length ?course.completedChapter?.length : course.courseList?.chapter?.length}/{course.courseList?.chapter?.length} chapters</span></h2>
+          <span className='float-right'>{course.completedChapter?.length > course.courseList?.chapter?.length ?course.courseList?.chapter?.length : course.completedChapter?.length }/{course.courseList?.chapter?.length} chapters</span></h2>
         <Progress value={getTotalCompletedChapterPerc(course)} className='h-[7px]' />
       </div>
     </div>
