@@ -7,7 +7,8 @@ import Link from 'next/link'
 export default function ProgressCourseItem({course}) {
 
   const getTotalCompletedChapterPerc = (item) =>{
-    const percentage = (item.completedChapter?.length/item?.courseList?.chapter?.length)*100
+    const completed =  item.completedChapter?.length > item?.courseList?.chapter?.length ? item?.courseList?.chapter?.length :item.completedChapter?.length
+    const percentage = (completed/item?.courseList?.chapter?.length)*100
     console.log("/course-preview/"+item.courseList.slug)
     return percentage
   }
