@@ -9,7 +9,7 @@ function layout({children}) {
         <div className='sm:w-64 hidden sm:block fixed'>
             <Sidenav />
         </div>
-        <div className=' sm:ml-64'>
+        <div className=' sm:ml-64 w-screen'>
             <Header />
             {children}
         </div>

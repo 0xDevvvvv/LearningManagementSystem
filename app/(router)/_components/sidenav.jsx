@@ -24,13 +24,6 @@ function Sidenav() {
         auth:true
     },
     {
-        id: 2,
-        name:"Store",
-        icon:MenuIcon,
-        path:"/store",
-        auth:true
-    },
-    {
         id: 3,
         name:"Membership",
         icon:BadgeIcon,
@@ -46,12 +39,19 @@ function Sidenav() {
     },
     {
       id: 5,
-      name:"NewsLetter",
+      name:"Blogs",
       icon:NewspaperIcon,
-      path:"/newsletter",
+      path:"/blogs",
       auth:true
   }
 ]
+//  {
+//         id: 2,
+//         name:"Store",
+//         icon:MenuIcon,
+//         path:"/store",
+//         auth:true
+//     },
 const path = usePathname()
 useEffect(()=>{
 },[])

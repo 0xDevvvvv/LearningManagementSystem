@@ -1,13 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-"paths": {
-  "@/*": ["./*"],
-  "@/components/*": ["components/*"],
-  "@/types/*": ["types/*"],
-  "@/lib/*": ["lib/*"], //any other root-level paths
-  "@/_utils/*": ["_utils/*"], //any other root-level paths
-},
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,6 +16,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@*": ["*"]
+    },
     "plugins": [
       {
         "name": "next"
@@ -35,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/(router)/blogs/page.js", "app/api/devtp/route.js"  ],
+, "app/(router)/blogs/page.js", "app/api/dev.to/route.js"  ],
   "exclude": [
     "node_modules"
   ]
